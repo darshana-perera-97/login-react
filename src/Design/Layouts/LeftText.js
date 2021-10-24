@@ -1,4 +1,5 @@
 import React from "react";
+import { Wave } from "react-animated-text";
 import ReactLogo from "../Components/ReactLogo";
 import HeadingText from "../Components/HeadingText";
 
@@ -8,17 +9,18 @@ export default function LeftText() {
       style={{ marginLeft: "auto", marginRight: "auto", textAlign: "center" }}
     >
       <ReactLogo />
-      <p
+      <div
         style={{
           color: "white",
           fontFamily: "Dancing Script",
           fontSize: "25px",
           marginTop: "-20px",
+          marginBottom:"20px"
         }}
       >
-        Learnig Web Design with HTML
-      </p>
-      <HeadingText val1={ "WEB UI DESIGN"} val2={ "WITH REACT"}/>
+        <Wave text="Learnig Web Design with React" />
+      </div>
+      <HeadingText val1={"WEB UI DESIGN"} val2={"WITH REACT"} />
       <button
         style={{
           color: "#10151b",
